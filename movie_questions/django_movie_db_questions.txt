@@ -1,0 +1,34 @@
+Consider the below IMDB Database Schema
+
+Actor
+    name
+    gender
+    birth_date
+
+Movie
+    title
+    release_date
+    actors (M2M to MovieCast)
+
+MovieCast
+    movie (FK to Movie)
+    cast (FK to actor)
+    role
+
+MovieRating
+    movie (FK to Movie)
+    avg_rating (int)
+    no_of_ratings
+
+
+"""
+1) Return ten movies with top avg rating
+2) Calculate the number of movies each actor acted and return top 5 actors who acted in more number of movies and 5 actors who acted in least no of movies
+3) Calculate the average age of the cast for each movie and return the top 5 youngest and oldest movie titles
+4) Star month for a movie is the month in which most of their cast is born. Find all the movies which are released in their star month. Return the results in the descending order of the number of cast born in the star month
+5) For each actor find the number of movies released in the month in which the actor is born
+6) For each of the actor find the difference between the no. of 1 star and 5 star ratings of the movies they acted. Return actors with descending order of the difference
+7) Find the age of the youngest cast when the movie got published and return the top 10 movies in increasing order of the age of the youngest actor
+8) Find out the year in which most of the cast's movies are released (Note this is not same as the year in which most of the movies released)
+9) Best Twin Stars are the two actors how made more movie together. Find the Best Twin Stars in the db.
+"""
