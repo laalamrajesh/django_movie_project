@@ -2,6 +2,8 @@ from movie_app.models import *
 from django.db.models.functions import  ExtractMonth
 from django.db.models import *
 from django.db import connection
+from datetime import datetime as date
+
 
 
 def top_and_least(result, count):
